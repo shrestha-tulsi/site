@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taja Bakery - Premium Cakes & Desserts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Taja Bakery</h1>
+        <p class="tagline">Sweet Moments, Sweet Memories</p>
+        <p>Crafting Memorable Celebrations Since 2060</p>
+    </header>
+
+    <div class="cake-tabs">
+        <button class="tab-button" onclick="openCakeCategory(event, 'classic')">Classic Cakes</button>
+        <button class="tab-button" onclick="openCakeCategory(event, 'chocolate')">Chocolate Cakes</button>
+        <button class="tab-button" onclick="openCakeCategory(event, 'redvelvet')">Red Velvet Cakes</button>
+        <button class="tab-button" onclick="openCakeCategory(event, 'jelly')">Jelly Cakes</button>
+        <button class="tab-button" onclick="openCakeCategory(event, 'specialty')">Specialty Cakes</button>
+        <button class="tab-button" onclick="openCakeCategory(event, 'hot-beverages')">Hot Beverages</button>
+        <button class="tab-button" onclick="openCakeCategory(event, 'cold-beverages')">Cold Beverages</button>
+
+    </div>
+
+    <div id="classic" class="cake-category">
+        <h2 class="category-title">Classic Cakes</h2>
+        
+        <div class="cake-container">
+            <div class="cake-header">
+                <img src="images/black-forest-cake.jpg" alt="Black Forest Cake" class="main-cake-image">
+                <div class="cake-main-info">
+                    <h3 class="cake-name">Black Forest Cake</h3>
+                    <p class="cake-description">Traditional German cake featuring layers of chocolate sponge, whipped cream, and cherries, topped with chocolate shavings.</p>
+                    
+                    <div class="cake-basics">
+                        <p class="cake-basics-label">Base Price Range:</p>
+                        <p>Rs. 3,500 - Rs. 6,500 depending on size and decoration</p>
+                        
+                        <p class="cake-basics-label">Contains:</p>
+                        <p>Eggs, Dairy, Wheat</p>
+                        
+                        <p class="cake-basics-label">Special Options:</p>
+                        <p>Gluten-free option available by request (+Rs. 400)</p>
+                        <p>This cake cannot be made vegan</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cake-options-section">
+                <h4 class="options-title">Design Options</h4>
+                <div class="cake-options-grid">
+                    <div class="option-card">
+                        <img src="images/black-forest-classic.jpg" alt="Classic Black Forest" class="option-image">
+                        <div class="option-info">
+                            <h5 class="option-name">Classic Black Forest</h5>
+                            <p class="option-description">Traditional design with chocolate shavings on the sides, whipped cream rosettes, and cherries on top.</p>
+                            <ul class="option-features">
+                                <li>Chocolate shavings coating</li>
+                                <li>Cherry decorations</li>
+                                <li>Whipped cream piping</li>
+                            </ul>
+                            <span class="option-price">From Rs. 3,500</span>
+                        </div>
+                    </div>
+                    
+                    <div class="option-card">
+                        <img src="images/black-forest-deluxe.jpg" alt="Deluxe Black Forest" class="option-image">
+                        <div class="option-info">
+                            <h5 class="option-name">Deluxe Black Forest</h5>
+                            <p class="option-description">Elegant design with chocolate curls, gold-dusted cherries, and premium dark chocolate garnish.</p>
+                            <ul class="option-features">
+                                <li>Chocolate curls decoration</li>
+                                <li>Gold-dusted cherries</li>
+                                <li>Premium chocolate work</li>
+                            </ul>
+                            <span class="option-price">From Rs. 4,200</span>
+                        </div>
+                    </div>
+                    
+                    <div class="option-card">
+                        <img src="images/black-forest-modern.jpg" alt="Modern Black Forest" class="option-image">
+                        <div class="option-info">
+                            <h5 class="option-name">Modern Black Forest</h5>
+                            <p class="option-description">Contemporary design with smooth sides, chocolate drip, and artistic cherry compote placement.</p>
+                            <ul class="option-features">
+                                <li>Chocolate drip decoration</li>
+                                <li>Minimalist styling</li>
+                                <li>Artistic presentation</li>
+                            </ul>
+                            <span class="option-price">From Rs. 4,500</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cake-container">
+            <div class="cake-header">
+                <img src="images/white-forest-cake.jpg" alt="White Forest Cake" class="main-cake-image">
+                <div class="cake-main-info">
+                    <h3 class="cake-name">White Forest Cake</h3>
+                    <p class="cake-description">A delightful twist on the classic Black Forest, featuring layers of vanilla sponge with whipped cream and cherries, topped with white chocolate shavings.</p>
+                    
+                    <div class="cake-basics">
+                        <p class="cake-basics-label">Base Price Range:</p>
+                        <p>Rs. 3,750 - Rs. 6,700 depending on size and decoration</p>
+                        
+                        <p class="cake-basics-label">Contains:</p>
+                        <p>Eggs, Dairy, Wheat</p>
+                        
+                        <p class="cake-basics-label">Special Options:</p>
+                        <p>Gluten-free option available by request (+Rs. 400)</p>
+                        <p>This cake cannot be made vegan</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cake-options-section">
+                <h4 class="options-title">Design Options</h4>
+                <div class="cake-options-grid">
+                    <div class="option-card">
+                        <img src="images/white-forest-classic.jpg" alt="Classic White Forest" class="option-image">
+                        <div class="option-info">
+                            <h5 class="option-name">Classic White Forest</h5>
+                            <p class="option-description">Traditional design with white chocolate shavings on the sides, whipped cream rosettes, and cherries on top.</p>
+                            <ul class="option-features">
+                                <li>White chocolate shavings coating</li>
+                                <li>Cherry decorations</li>
+                                <li>Whipped cream piping</li>
+                            </ul>
+                            <span class="option-price">From Rs. 3,750</span>
+                        </div>
+                    </div>
+                    
+                    <div class="option-card">
+                        <img src="images/white-forest-deluxe.jpg" alt="Deluxe White Forest" class="option-image">
+                        <div class="option-info">
+                            <h5 class="option-name">Deluxe White Forest</h5>
+                            <p class="option-description">Elegant design with white chocolate curls, gold-dusted cherries, and premium white chocolate garnish.</p>
+                            <ul class="option-features">
+                                <li>White chocolate curls decoration</li>
+                                <li>Gold-dusted cherries</li>
+                                <li>Premium white chocolate work</li>
+                            </ul>
+                            <span class="option-price">From Rs. 4,500</span>
+                        </div>
+                    </div>
+                    
+                    <div class="option-card">
+                        <img src="images/white-forest-modern.jpg" alt="Modern White Forest" class="option-image">
+                        <div class="option-info">
+                            <h5 class="option-name">Modern White Forest</h5>
+                            <p class="option-description">Contemporary design with smooth sides, white chocolate drip, and artistic cherry compote placement.</p>
+                            <ul class="option-features">
+                                <li>White chocolate drip decoration</li>
+                                <li>Minimalist styling</li>
+                                <li>Artistic presentation</li>
+                            </ul>
+                            <span class="option-price">From Rs. 4,800</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cake-container">
+            <div class="cake-header">
+                <img src="images/vanilla-cake.jpg" alt="Vanilla Cake" class="main-cake-image">
+                <div class="cake-main-info">
+                    <h3 class="cake-name">Vanilla Cake</h3>
+                    <p class="cake-description">Light and fluffy vanilla cake with a delicate flavor, perfect for any occasion and customizable with various fillings and frostings.</p>
+                    
+                    <div class="cake-basics">
+                        <p class="cake-basics-label">Base Price Range:</p>
+                        <p>Rs. 3,300 - Rs. 6,250 depending on size and decoration</p>
+                        
+                        <p class="cake-basics-label">Contains:</p>
+                        <p>Eggs, Dairy, Wheat</p>
+                        
+                        <p class="cake-basics-label">Special Options:</p>
+                        <p>Gluten-free option available by request (+Rs. 400)</p>
+                        <p>Vegan option available by request (+Rs. 400)</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cake-options-section">
+                <h4 class="options-title">Design Options</h4>
+                <div class="cake-options-grid">
+                    <div class="option-card">
+                        <img src="images/vanilla-classic.jpg" alt="Classic Vanilla" class="option-image">
+                        <div class="option-info">
+                            <h5 class="option-name">Classic Vanilla</h5>
+                            <p class="option-description">Traditional design with smooth vanilla buttercream frosting and simple elegant piping.</p>
+                            <ul class="option-features">
+                                <li>Smooth buttercream finish</li>
+                                <li>Classic piping details</li>
+                                <li>Optional fresh flower topping</li>
+                            </ul>
+                            <span class="option-price">From Rs. 3,300</span>
+                        </div>
+                    </div>
+                    
+                    <div class="option-card">
+                        <img src="images/vanilla-berries.jpg" alt="Vanilla & Berries" class="option-image">
+                        <div class="option-info">
+                            <h5 class="option-name">Vanilla & Berries</h5>
+                            <p class="option-description">Elegant vanilla cake topped with fresh seasonal berries and a light glaze.</p>
+                            <ul class="option-features">
+                                <li>Fresh berry decoration</li>
+                                <li>Light sugar glaze</li>
+                                <li>Optional gold leaf accents</li>
+                            </ul>
+                            <span class="option-price">From Rs. 3,800</span>
+                        </div>
+                    </div>
+                    
+                    <div class="option-card">
+                        <img src="images/vanilla-modern.jpg" alt="Modern Vanilla" class="option-image">
+                        <div class="option-info">
+                            <h5 class="option-name">Modern Vanilla</h5>
+                            <p class="option-description">Contemporary design with textured buttercream, metallic accents, and geometric elements.</p>
+                            <ul class="option-features">
+                                <li>Textured frosting techniques</li>
+                                <li>Metallic color accents</li>
+                                <li>Modern geometric decorations</li>
+                            </ul>
+                            <span class="option-price">From Rs. 4,000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="chocolate" class="cake-category">
+        <h2 class="category-title">Chocolate Cakes</h2>
+        
+        <div class="cake-container">
+            <div class="cake-header">
+                <img src="images/chocolate-truffle.jpg" alt="Chocolate Truffle Cake" class="main-cake-image">
+                <div class="cake-main-info">
+                    <h3 class="cake-name">Chocolate Truffle Cake</h3>
+                    <p class="cake-description">Our signature chocolate cake featuring layers of moist chocolate sponge filled with smooth chocolate ganache and covered in decadent chocolate truffle frosting.</p>
+                    
+                    <div class="cake-basics">
+                        <p class="cake-basics-label">Base Price Range:</p>
+                        <p>Rs. 3,200 - Rs. 6,250 depending on size and decoration</p>
+                        
+                        <p class="cake-basics-label">Contains:</p>
+                        <p>Eggs, Dairy, Wheat, Soy</p>
+                        
+                        <p class="cake-basics-label">Special Options:</p>
+                        <p>Gluten-free option available by request (+Rs. 400)</p>
+                        <p>This cake cannot be made vegan</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cake-options-section">
+                <h4 class="options-title">Design Options</h4>
+                <div class="cake-options-grid">
+                    <div class="option-card">
+                        <img src="images/truffle-classic.jpg" alt="Classic Truffle" class="option-image">
+                        <div class="option-info">
+                            <h5 class="option-name">Classic Truffle</h5>
+                            <p class="option-description">Traditional design with smooth ganache coating and chocolate truffle decorations.</p>
+                            <ul class="option-features">
+                                <li>Smooth ganache finish</li>
+                                <li>Chocolate truffle garnish</li>
+                                <li>Chocolate shavings</li>
+                            </ul>
+                            <span class="option-price">From Rs. 3,200</span>
+                        </div>
+                    </div>
+                    
+                    <div class="option-card">
+                        <img src="images/truffle-deluxe.jpg" alt="Deluxe Truffle" class="option-image">
+                        <div class="option-info">
+                            <h5 class="option-name">Deluxe Truffle</h5>
+                            <p class="option-description">Premium design with mirror glaze, gold accents, and handcrafted chocolate decorations.</p>
+                            <ul class="option-features">
+                                <li>Mirror glaze finish</li>
+                                <li>Gold leaf accents</li>
+                                <li>Handcrafted chocolate work</li>
+                            </ul>
+                            <span class="option-price">From Rs. 4,000</span>
+                        </div>
+                    </div>
+                    
+                    <div class="option-card">
+                        <img src="images/truffle-modern.jpg" alt="Modern Truffle" class="option-image">
+                        <div class="option-info">
+                            <h5 class="option-name">Modern Truffle</h5>
+                            <p class="option-description">Contemporary design with chocolate drip, geometric decorations, and artistic presentation.</p>
+                            <ul class="option-features">
+                                <li>Chocolate drip technique</li>
+                                <li>Geometric chocolate elements</li>
+                                <li>Modern artistic styling</li>
+                            </ul>
+                            <span class="option-price">From Rs. 3,800</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="redvelvet" class="cake-category">
+        <h2 class="category-title">Red Velvet Cakes</h2>
+        
+        <div class="cake-container">
+            <div class="cake-header">
+                <img src="images/red-velvet.jpg" alt="Red Velvet Cake" class="main-cake-image">
+                <div class="cake-main-info">
+                    <h3 class="cake-name">Red Velvet Cake</h3>
+                    <p class="cake-description">Our elegant red velvet cake with its signature subtle cocoa flavor, topped with classic cream cheese frosting for that perfect tangy-sweet balance.</p>
+                    
+                    <div class="cake-basics">
+                        <p class="cake-basics-label">Base Price Range:</p>
+                        <p>Rs. 3,500 - Rs. 6,700 depending on size and decoration</p>
+                        
+                        <p class="cake-basics-label">Contains:</p>
+                        <p>Eggs, Dairy, Wheat</p>
+                        
+                        <p class="cake-basics-label">Special Options:</p>
+                        <p>Gluten-free option available by request (+Rs. 400)</p>
+                        <p>This cake cannot be made vegan</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cake-options-section">
+                <h4 class="options-title">Design Options</h4>
+                <div class="cake-options-grid">
+                    <div class="option-card">
+                        <img src="images/redvelvet-classic.jpg" alt="Classic Red Velvet" class="option-image">
+                        <div class="option-info">
+                            <h5 class="option-name">Classic Red Velvet</h5>
+                            <p class="option-description">Traditional design with smooth cream cheese frosting and red velvet crumbs on the sides.</p>
+                            <ul class="option-features">
+                                <li>Smooth cream cheese finish</li>
+                                <li>Red velvet crumb coating</li>
+                                <li>Simple elegant piping</li>
+                            </ul>
+                            <span class="option-price">From Rs. 3,500</span>
+                        </div>
+                    </div>
+                    
+                    <div class="option-card">
+                        <img src="images/redvelvet-deluxe.jpg" alt="Deluxe Red Velvet" class="option-image">
+                        <div class="option-info">
+                            <h5 class="option-name">Deluxe Red Velvet</h5>
+                            <p class="option-description">Premium design with white chocolate decorations, gold accents, and luxurious presentation.</p>
+                            <ul class="option-features">
+                                <li>White chocolate decorations</li>
+                                <li>Gold leaf accents</li>
+                                <li>Luxury presentation</li>
+                            </ul>
+                            <span class="option-price">From Rs. 4,200</span>
+                        </div>
+                    </div>
+                    
+                    <div class="option-card">
+                        <img src="images/redvelvet-modern.jpg" alt="Modern Red Velvet" class="option-image">
+                        <div class="option-info">
+                            <h5 class="option-name">Modern Red Velvet</h5>
+                            <p class="option-description">Contemporary design with semi-naked frosting, fresh berries, and artistic styling.</p>
+                            <ul class="option-features">
+                                <li>Semi-naked frosting technique</li>
+                                <li>Fresh berry decoration</li>
+                                <li>Modern minimalist styling</li>
+                            </ul>
+                            <span class="option-price">From Rs. 4,000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="jelly" class="cake-category">
+        <h2 class="category-title">Jelly Cakes</h2>
+        
+        <div class="cake-container">
+            <div class="cake-header">
+                <img src="images/strawberry-jelly.jpg" alt="Strawberry Jelly Cake" class="main-cake-image">
+                <div class="cake-main-info">
+                    <h3 class="cake-name">Strawberry Jelly Cake</h3>
+                    <p class="cake-description">Delicate sponge cakes dipped in strawberry jelly and coated with coconut, filled with Chantilly cream for a nostalgic treat.</p>
+                    
+                    <div class="cake-basics">
+                        <p class="cake-basics-label">Base Price Range:</p>
+                        <p>Rs. 3,300 - Rs. 6,250 depending on size and decoration</p>
+                        
+                        <p class="cake-basics-label">Contains:</p>
+                        <p>Eggs, Dairy, Wheat</p>
+                        
+                        <p class="cake-basics-label">Special Options:</p>
+                        <p>Gluten-free option available by request (+Rs. 400)</p>
+                        <p>This cake cannot be made vegan</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cake-options-section">
+                <h4 class="options-title">Design Options</h4>
+                <div class="cake-options-grid">
+                    <div class="option-card">
+                        <img src="images/strawberry-jelly-classic.jpg" alt="Classic Strawberry Jelly" class="option-image">
+                        <div class="option-info">
+                            <h5 class="option-name">Classic Strawberry Jelly</h5>
+                            <p class="option-description">Traditional design with coconut coating, fresh strawberries, and classic presentation.</p>
+                            <ul class="option-features">
+                                <li>Coconut coating</li>
+                                <li>Fresh strawberry garnish</li>
+                                <li>Classic jelly cake styling</li>
+                            </ul>
+                            <span class="option-price">From Rs. 3,300</span>
+                        </div>
+                    </div>
+                    
+                    <div class="option-card">
+                        <img src="images/strawberry-jelly-deluxe.jpg" alt="Deluxe Strawberry Jelly" class="option-image">
+                        <div class="option-info">
+                            <h5 class="option-name">Deluxe Strawberry Jelly</h5>
+                            <p class="option-description">Premium design with strawberry mirror glaze, white chocolate decorations, and elegant presentation.</p>
+                            <ul class="option-features">
+                                <li>Strawberry mirror glaze</li>
+                                <li>White chocolate decorations</li>
+                                <li>Elegant presentation</li>
+                            </ul>
+                            <span class="option-price">From Rs. 3,800</span>
+                        </div>
+                    </div>
+                    
+                    <div class="option-card">
+                        <img src="images/strawberry-jelly-modern.jpg" alt="Modern Strawberry Jelly" class="option-image">
+                        <div class="option-info">
+                            <h5 class="option-name">Modern Strawberry Jelly</h5>
+                            <p class="option-description">Contemporary design with layered jelly effects, artistic presentation, and modern styling.</p>
+                            <ul class="option-features">
+                                <li>Layered jelly effects</li>
+                                <li>Artistic presentation</li>
+                                <li>Modern minimalist styling</li>
+                            </ul>
+                            <span class="option-price">From Rs. 3,600</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cake-container">
+            <div class="cake-header">
+                <img src="images/pineapple-jelly.jpg" alt="Pineapple Jelly Cake" class="main-cake-image">
+                <div class="cake-main-info">
+                    <h3 class="cake-name">Pineapple Jelly Cake</h3>
+                    <p class="cake-description">Tropical-inspired jelly cake with pineapple flavored jelly and coconut coating, filled with pineapple cream.</p>
+                    
+                    <div class="cake-basics">
+                        <p class="cake-basics-label">Base Price Range:</p>
+                        <p>Rs. 3,500 - Rs. 6,500 depending on size and decoration</p>
+                        
+                        <p class="cake-basics-label">Contains:</p>
+                        <p>Eggs, Dairy, Wheat</p>
+                        
+                        <p class="cake-basics-label">Special Options:</p>
+                        <p>Gluten-free option available by request (+Rs. 400)</p>
+                        <p>This cake cannot be made vegan</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cake-options-section">
+                <h4 class="options-title">Design Options</h4>
+                <div class="cake-options-grid">
+                    <div class="option-card">
+                        <img src="images/pineapple-jelly-classic.jpg" alt="Classic Pineapple Jelly" class="option-image">
+                        <div class="option-info">
+                            <h5 class="option-name">Classic Pineapple Jelly</h5>
+                            <p class="option-description">Traditional design with coconut coating, fresh pineapple pieces, and classic presentation.</p>
+                            <ul class="option-features">
+                                <li>Coconut coating</li>
+                                <li>Fresh pineapple garnish</li>
+                                <li>Classic jelly cake styling</li>
+                            </ul>
+                            <span class="option-price">From Rs. 3,500</span>
+                        </div>
+                    </div>
+                    
+                    <div class="option-card">
+                        <img src="images/pineapple-jelly-tropical.jpg" alt="Tropical Pineapple Jelly" class="option-image">
+                        <div class="option-info">
+                            <h5 class="option-name">Tropical Pineapple Jelly</h5>
+                            <p class="option-description">Exotic design with tropical fruit decorations, palm leaf accents, and vacation-inspired styling.</p>
+                            <ul class="option-features">
+                                <li>Tropical fruit decorations</li>
+                                <li>Palm leaf accents</li>
+                                <li>Vacation-inspired styling</li>
+                            </ul>
+                            <span class="option-price">From Rs. 4,000</span>
+                        </div>
+                    </div>
+                    
+                    <div class="option-card">
+                        <img src="images/pineapple-jelly-modern.jpg" alt="Modern Pineapple Jelly" class="option-image">
+                        <div class="option-info">
+                            <h5 class="option-name">Modern Pineapple Jelly</h5>
+                            <p class="option-description">Contemporary design with layered jelly effects, geometric pineapple cutouts, and modern styling.</p>
+                            <ul class="option-features">
+                                <li>Layered jelly effects</li>
+                                <li>Geometric pineapple cutouts</li>
+                                <li>Modern minimalist styling</li>
+                            </ul>
+                            <span class="option-price">From Rs. 3,800</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cake-container">
+            <div class="cake-header">
+                <img src="images/blueberry-jelly.jpg" alt="Blueberry Jelly Cake" class="main-cake-image">
+                <div class="cake-main-info">
+                    <h3 class="cake-name">Blueberry Jelly Cake</h3>
+                    <p class="cake-description">Vibrant blueberry jelly cake with a hint of lemon, coated in coconut and filled with blueberry cream.</p>
+                    
+                    <div class="cake-basics">
+                        <p class="cake-basics-label">Base Price Range:</p>
+                        <p>Rs. 3,750 - Rs. 6,800 depending on size and decoration</p>
+                        
+                        <p class="cake-basics-label">Contains:</p>
+                        <p>Eggs, Dairy, Wheat</p>
+                        
+                        <p class="cake-basics-label">Special Options:</p>
+                        <p>Gluten-free option available by request (+Rs. 400)</p>
+                        <p>This cake cannot be made vegan</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cake-options-section">
+                <h4 class="options-title">Design Options</h4>
+                <div class="cake-options-grid">
+                    <div class="option-card">
+                        <img src="images/blueberry-jelly-classic.jpg" alt="Classic Blueberry Jelly" class="option-image">
+                        <div class="option-info">
+                            <h5 class="option-name">Classic Blueberry Jelly</h5>
+                            <p class="option-description">Traditional design with coconut coating, fresh blueberries, and classic presentation.</p>
+                            <ul class="option-features">
+                                <li>Coconut coating</li>
+                                <li>Fresh blueberry garnish</li>
+                                <li>Classic jelly cake styling</li>
+                            </ul>
+                            <span class="option-price">From Rs. 3,750</span>
+                        </div>
+                    </div>
+                    
+                    <div class="option-card">
+                        <img src="images/blueberry-jelly-deluxe.jpg" alt="Deluxe Blueberry Jelly" class="option-image">
+                        <div class="option-info">
+                            <h5 class="option-name">Deluxe Blueberry Jelly</h5>
+                            <p class="option-description">Premium design with blueberry mirror glaze, white chocolate decorations, and elegant presentation.</p>
+                            <ul class="option-features">
+                                <li>Blueberry mirror glaze</li>
+                                <li>White chocolate decorations</li>
+                                <li>Elegant presentation</li>
+                            </ul>
+                            <span class="option-price">From Rs. 4,200</span>
+                        </div>
+                    </div>
+                    
+                    <div class="option-card">
+                        <img src="images/blueberry-jelly-modern.jpg" alt="Modern Blueberry Jelly" class="option-image">
+                        <div class="option-info">
+                            <h5 class="option-name">Modern Blueberry Jelly</h5>
+                            <p class="option-description">Contemporary design with ombre jelly effects, artistic presentation, and modern styling.</p>
+                            <ul class="option-features">
+                                <li>Ombre jelly effects</li>
+                                <li>Artistic presentation</li>
+                                <li>Modern minimalist styling</li>
+                            </ul>
+                            <span class="option-price">From Rs. 4,000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="specialty" class="cake-category">
+        <h2 class="category-title">Specialty Cakes</h2>
+        
+        <div class="cake-container">
+            <div class="cake-header">
+                <img src="images/lemon-raspberry.jpg" alt="Lemon Raspberry Cake" class="main-cake-image">
+                <div class="cake-main-info">
+                    <h3 class="cake-name">Lemon Raspberry Cake</h3>
+                    <p class="cake-description">Bright and refreshing lemon cake with raspberry filling, perfect for spring and summer celebrations.</p>
+                    
+                    <div class="cake-basics">
+                        <p class="cake-basics-label">Base Price Range:</p>
+                        <p>Rs. 3,750 - Rs. 7,100 depending on size and decoration</p>
+                        
+                        <p class="cake-basics-label">Contains:</p>
+                        <p>Eggs, Dairy, Wheat</p>
+                        
+                        <p class="cake-basics-label">Special Options:</p>
+                        <p>Gluten-free option available by request (+Rs. 400)</p>
+                        <p>This cake cannot be made vegan</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cake-options-section">
+                <h4 class="options-title">Design Options</h4>
+                <div class="cake-options-grid">
+                    <div class="option-card">
+                        <img src="images/lemon-raspberry-classic.jpg" alt="Classic Lemon Raspberry" class="option-image">
+                        <div class="option-info">
+                            <h5 class="option-name">Classic Lemon Raspberry</h5>
+                            <p class="option-description">Traditional design with smooth lemon buttercream, fresh raspberries, and elegant piping.</p>
+                            <ul class="option-features">
+                                <li>Smooth lemon buttercream</li>
+                                <li>Fresh raspberry garnish</li>
+                                <li>Elegant piping details</li>
+                            </ul>
+                            <span class="option-price">From Rs. 3,750</span>
+                        </div>
+                    </div>
+                    
+                    <div class="option-card">
+                        <img src="images/lemon-raspberry-deluxe.jpg" alt="Deluxe Lemon Raspberry" class="option-image">
+                        <div class="option-info">
+                            <h5 class="option-name">Deluxe Lemon Raspberry</h5>
+                            <p class="option-description">Premium design with lemon curd drip, candied lemon slices, fresh raspberries, and elegant presentation.</p>
+                            <ul class="option-features">
+                                <li>Lemon curd drip</li>
+                                <li>Candied lemon slices</li>
+                                <li>Premium raspberry arrangement</li>
+                            </ul>
+                            <span class="option-price">From Rs. 4,500</span>
+                        </div>
+                    </div>
+                    
+                    <div class="option-card">
+                        <img src="images/lemon-raspberry-modern.jpg" alt="Modern Lemon Raspberry" class="option-image">
+                        <div class="option-info">
+                            <h5 class="option-name">Modern Lemon Raspberry</h5>
+                            <p class="option-description">Contemporary design with textured buttercream, geometric elements, and artistic fruit placement.</p>
+                            <ul class="option-features">
+                                <li>Textured buttercream</li>
+                                <li>Geometric decorative elements</li>
+                                <li>Artistic fruit placement</li>
+                            </ul>
+                            <span class="option-price">From Rs. 4,200</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hot Beverages Section -->
+<div id="hot-beverages" class="cake-category">
+  <h2 class="category-title">Hot Beverages</h2>
+  
+  <div class="cake-options-grid">
+    <!-- Espresso -->
+    <div class="option-card">
+      <img src="espresso.jpg" alt="Espresso" class="option-image">
+      <div class="option-info">
+        <h3 class="option-name">Espresso</h3>
+        <p class="option-description">Our signature espresso with rich crema and bold flavor profile.</p>
+        <div class="badges-container">
+          <span class="badge bestseller">Bestseller</span>
+        </div>
+        <ul class="option-features">
+          <li>Available in single or double shot</li>
+          <li>Locally sourced beans</li>
+          <li>Freshly ground for each order</li>
+        </ul>
+        <span class="option-price">Rs. 120 - Rs. 180</span>
+      </div>
+    </div>
+    
+    <!-- Cappuccino -->
+    <div class="option-card">
+      <img src="cappuccino.jpg" alt="Cappuccino" class="option-image">
+      <div class="option-info">
+        <h3 class="option-name">Cappuccino</h3>
+        <p class="option-description">Perfect balance of espresso, steamed milk, and velvety foam.</p>
+        <ul class="option-features">
+          <li>Available with regular or oat milk</li>
+          <li>Optional cinnamon or cocoa dusting</li>
+          <li>Small, medium, or large size</li>
+        </ul>
+        <span class="option-price">Rs. 220 - Rs. 320</span>
+      </div>
+    </div>
+    
+    <!-- Masala Chai -->
+    <div class="option-card">
+      <img src="masala-chai.jpg" alt="Masala Chai" class="option-image">
+      <div class="option-info">
+        <h3 class="option-name">Masala Chai</h3>
+        <p class="option-description">Traditional spiced tea with cardamom, cinnamon, ginger, and cloves.</p>
+        <div class="badges-container">
+          <span class="badge bestseller">Bestseller</span>
+        </div>
+        <ul class="option-features">
+          <li>Made with fresh spices</li>
+          <li>Customizable sweetness</li>
+          <li>Available with regular or buffalo milk</li>
+        </ul>
+        <span class="option-price">Rs. 150 - Rs. 220</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Cold Beverages Section -->
+<div id="cold-beverages" class="cake-category">
+  <h2 class="category-title">Cold Beverages</h2>
+  
+  <div class="cake-options-grid">
+    <!-- Iced Coffee -->
+    <div class="option-card">
+      <img src="iced-coffee.jpg" alt="Iced Coffee" class="option-image">
+      <div class="option-info">
+        <h3 class="option-name">Iced Coffee</h3>
+        <p class="option-description">Cold brewed coffee served over ice for a smooth, refreshing experience.</p>
+        <div class="badges-container">
+          <span class="badge seasonal">Summer Special</span>
+        </div>
+        <ul class="option-features">
+          <li>24-hour cold brew process</li>
+          <li>Optional flavor syrups available</li>
+          <li>Served with or without milk</li>
+        </ul>
+        <span class="option-price">Rs. 180 - Rs. 250</span>
+      </div>
+    </div>
+    
+    <!-- Mango Lassi -->
+    <div class="option-card">
+      <img src="mango-lassi.jpg" alt="Mango Lassi" class="option-image">
+      <div class="option-info">
+        <h3 class="option-name">Mango Lassi</h3>
+        <p class="option-description">Refreshing yogurt-based drink with sweet mango pulp and a hint of cardamom.</p>
+        <div class="badges-container">
+          <span class="badge bestseller">Bestseller</span>
+        </div>
+        <ul class="option-features">
+          <li>Made with fresh seasonal mangoes</li>
+          <li>Homemade yogurt</li>
+          <li>Optional mint garnish</li>
+        </ul>
+        <span class="option-price">Rs. 220 - Rs. 280</span>
+      </div>
+    </div>
+    
+    <!-- Fresh Lime Soda -->
+    <div class="option-card">
+      <img src="lime-soda.jpg" alt="Fresh Lime Soda" class="option-image">
+      <div class="option-info">
+        <h3 class="option-name">Fresh Lime Soda</h3>
+        <p class="option-description">Zesty lime juice with sparkling water, served sweet, salty, or mixed.</p>
+        <ul class="option-features">
+          <li>Freshly squeezed lime</li>
+          <li>Choose sweet, salty, or mixed</li>
+          <li>Optional mint or ginger enhancement</li>
+        </ul>
+        <span class="option-price">Rs. 160 - Rs. 200</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="how-to-order">
+        <h3>How to Order Your Custom Cake</h3>
+        <ol class="steps">
+            <li>Choose your cake base from our selection above</li>
+            <li>Select the size that fits your event</li>
+            <li>Pick your preferred design option</li>
+            <li>Discuss any special requests or customizations</li>
+            <li>Place your order at least 48 hours in advance (72 hours for custom designs)</li>
+            <li>Pay a 50% deposit to confirm your order</li>
+        </ol>
+        <p>For custom inquiries, please call us at (555) 123-4567 or email info@tajabakery.com</p>
+    </div>
+
+    <footer>
+        <h3 class="footer-heading">Taja Bakery</h3>
+        <p>Crafting Sweet Memories Since 2060</p>
+        <div class="contact-info">
+            <h4>Contact Us</h4>
+            <p>Phone: (555) 123-4567</p>
+            <p>Email: info@tajabakery.com</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
